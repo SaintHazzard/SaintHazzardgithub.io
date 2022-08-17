@@ -113,7 +113,7 @@ function startPlay() {
     let tipoAgua = foundPlayer.tipo.find((element) => element == movsElements[0]);
     let tipoFuego = elegidoEnemie.tipo.find((element) => element == movsElements[1]);
     let tipoTierra = elegidoEnemie.tipo.find((element) => element == movsElements[2]);
-    debugger;
+    
     if (tipoAgua && tipoTierra) {
       if (ataqueDebil > ataqueFuerte) {
         enemyLifes--;
@@ -196,7 +196,7 @@ function startPlay() {
     let tipoAgua = elegidoEnemie.tipo.find((element) => element == movsElements[0]);
     let tipoFuego = foundPlayer.tipo.find((element) => element == movsElements[1]);
     let tipoTierra = elegidoEnemie.tipo.find((element) => element == movsElements[2]);
-    debugger;
+    
     if (tipoFuego && tipoAgua) {
       if (ataqueDebil > ataqueFuerte) {
         enemyLifes--;
@@ -276,7 +276,7 @@ function startPlay() {
    let tipoAgua = elegidoEnemie.tipo.find((element) => element == movsElements[0]);
    let tipoFuego = elegidoEnemie.tipo.find((element) => element == movsElements[1]);
    let tipoTierra = foundPlayer.tipo.find((element) => element == movsElements[2]);
-   debugger;
+   
    if (tipoTierra && tipoFuego) {
      if (ataqueDebil > ataqueFuerte) {
        enemyLifes--;
