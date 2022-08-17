@@ -58,10 +58,10 @@ function startPlay() {
               namePet.innerHTML = element.name;
               divMovs.classList.toggle(`hidden`);
               if (selectedMokemon) {
-                containerImgAlly.src = `/JuegoMokemon/${mokemonForFight.name}.png`;
+                containerImgAlly.src = `/JuegoMokemon/${mokemonForFight.name.toLowerCase()}.png`;
               }
               if (elegidoEnemie) {
-                containerImgEnemie.src = `/JuegoMokemon/${elegidoEnemie.name}.png`;
+                containerImgEnemie.src = `/JuegoMokemon/${elegidoEnemie.name.toLowerCase()}.png`;
               }
               element.tipo.forEach((value) => {
                 if (value == movsElements[0]) {
